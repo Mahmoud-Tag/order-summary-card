@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{  
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    height: 100vh;
+    background: var(--Pale-blue);
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(images/pattern-background-desktop.svg)
+    no-repeat;
+    background-size: contain;
+}
+.container{
+    background-color:#fff ;
+    max-width: 600px;
+    width: 30.1%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.28);
+}
+@media (min-width:767px) {
+    .container{
+        max-width: 370px;
+        min-width: 370px;
+    }
+}
+@media (max-width:766px) {
+    .container{
+        max-width: 370px;
+        min-width: 370px;
+    }
+}
+@media (max-width:467px) {
+    .container{
+        max-width: 70%;
+        min-width: 85%;
+    }
+}
+.container .image img{
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.container .image{
+    width: 100%;
+}
+.container .text{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+.container .text h1{
+    text-align: center;
+    font-size: 1.125rem;
+}
+.container .text p{
+    text-align: center;
+    font-size: 1rem;
+}
+.container .box{
+    background: var(--Very-pale-blue);
+    padding: 10px 15px;
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+}
+@media (min-width:767px) {
+    .container .box{
+        max-width: 90%;
+        gap:15px;
+    }
+}
+@media (max-width:766px) {
+    .container .box{
+        gap: 26px;
+    }
+}
+@media (max-width:467px) {
+    .container .box{
+        gap: 26px;
+    }
+}
+.container .box img{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+@media (max-width:370px) {
+    .container .box img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.container .box .one{
+    font-weight: 900;
+}
+@media (max-width:370px) {
+    .container .box .one{
+        font-size: 0.7em;
+        font-weight: 700;
+    }
+}
+.container .box .two{
+    font-size: 0.95em;
+    font-weight: 500;
+}@media (max-width:370px) {
+    .container .box .two{
+        font-size: 0.7em;
+    }
+}
+.container .box p{
+    margin-left: -20px;
+}
+.container .box a{
+    margin-top: 10px;
+}
+@media (max-width:370px) {
+    .container .box a{
+        font-size: 0.7em;
+    }
+}
+.container .pay{
+    width: 90%;
+    padding: 8px 10px;
+    background-color: var(--Bright-blue);
+    border-radius: 7px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+}
+.container .text .bottom{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
